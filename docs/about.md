@@ -7,8 +7,9 @@ I'm a Machine Learning Engineer with an MS in Artificial Intelligence from UC Sa
 ## What I Do
 
 - 🎙️ **Voice AI** — Real-time LLM-powered conversation systems: speech pipelines, transports (LiveKit), guardrails, and latency optimization
-- 🧠 **Multimodal LLM Engineering** — Fine-tuning (LoRA, ReST), prompt optimization (DSPy), and quantization for audio reasoning models
-- 📏 **Evaluation & Safety** — Designing benchmarks (sycophancy probing, audio reasoning) and test harnesses for LLMs and voice agents
+- 🧠 **LLM Post-Training** — Instruction tuning, LoRA/PEFT, reinforced self-training (ReST), and automated prompt optimization (DSPy) for multimodal and audio reasoning models
+- ⚡ **LLM Inference** — Serving with vLLM, TensorRT-LLM, and Nvidia Triton; int8/4-bit quantization with measured accuracy trade-offs
+- 📏 **Evaluation & Safety** — Designing benchmarks (sycophancy probing, audio reasoning) and test harnesses for LLMs and voice agents — presented at BayLearn 2026
 - 🔧 **MLOps** — Building robust CI/CD pipelines for model deployment on GCP, AWS, and Kubernetes
 
 ## Background

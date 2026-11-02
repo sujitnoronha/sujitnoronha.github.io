@@ -1,15 +1,20 @@
 site_name: Sujit Noronha
-site_description: ML Engineer | Voice AI | Multimodal LLMs | Evals | MLOps
+site_description: ML Engineer | Voice AI | LLM Post-Training | Inference Optimization | Evals
 site_author: Sujit Noronha
 site_url: https://sujitnoronha.github.io
 
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/waveform
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: black
       accent: indigo
       toggle:
         icon: material/brightness-7
@@ -17,15 +22,19 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: black
       accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -34,6 +43,9 @@ theme:
 plugins:
   - search
   - blog
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social:
@@ -52,6 +64,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
   - attr_list
   - md_in_html

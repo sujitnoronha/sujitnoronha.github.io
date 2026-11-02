@@ -5,8 +5,8 @@ Here are some of the key projects I've worked on:
 ## Research & Open Source (2026)
 
 ### Structured Prompting vs. Self-Training for Audio Reasoning
-**Type:** Research — Interspeech 2026 | 2026
-**Tech:** Qwen3-Omni-30B, DSPy (MIPROv2), ReST, LoRA, vLLM
+**Type:** Research — Interspeech 2026 | 2026  
+**Tech:** Qwen3-Omni-30B, DSPy (MIPROv2), ReST, LoRA, vLLM  
 **Links:** [GitHub](https://github.com/sujitnoronha/audio_reasoning_interspeech) · [MMAR Leaderboard](https://www.codabench.org/competitions/12460/#/results-tab)
 
 !!! abstract "Key Results"
@@ -17,20 +17,21 @@ Here are some of the key projects I've worked on:
 ---
 
 ### Blind Deference: Authority-Driven Sycophancy in LLMs
-**Type:** Research / Benchmark | 2026
-**Tech:** vLLM, OpenRouter, LLM-as-judge scoring
-**Links:** [GitHub](https://github.com/sujitnoronha/llm_sycophancy_probing)
+**Type:** Research / Benchmark — **Oral presentation @ BayLearn 2026** | 2026  
+**Tech:** vLLM, OpenRouter, LLM-as-judge scoring  
+**Links:** [GitHub](https://github.com/sujitnoronha/llm_sycophancy_probing) · [BayLearn 2026](https://baylearn-org.github.io/www/)
 
 !!! abstract "Key Contributions"
-    - Built a diagnostic benchmark probing how persona *authority* drives model capitulation in multi-turn conversations
-    - Introduced the **Authority Vulnerability Index (AVI)** and ranked 8 open-weight models: Qwen3-30B (1.9) and Llama-3.3-70B (5.3) near-immune, Gemma-3-12B (57.3) most vulnerable
+    - Built a diagnostic benchmark probing how persona *authority* drives model capitulation in multi-turn conversations — 10 domains, 200 questions, 8 models (7B–70B), 21,000+ conversations
+    - Introduced the **Authority Vulnerability Index (AVI)**, a 0–100 composite: Qwen3-30B (1.9) and Llama-3.3-70B (5.3) near-immune, Gemma-3-12B (57.3) most vulnerable; reasoning-trained models were **77% less vulnerable** than standard RLHF models
     - One-command harness — benchmark any model locally via vLLM or through OpenRouter, no GPU required
+    - Selected as an **oral talk at BayLearn 2026** (Santa Clara University), alongside keynotes from Andrew Ng (DeepLearning.AI), Azalia Mirhoseini (Ricursive Intelligence), and Ion Stoica (UC Berkeley)
 
 ---
 
 ### VoiceCheck: End-to-End Testing for Voice Agents
-**Type:** Open Source Framework | 2026
-**Tech:** Python, LiveKit, Daily, VAPI, Retell, pytest
+**Type:** Open Source Framework | 2026  
+**Tech:** Python, LiveKit, Daily, VAPI, Retell, pytest  
 **Links:** [GitHub](https://github.com/sujitnoronha/voicecheck)
 
 !!! abstract "What It Does"
@@ -41,8 +42,8 @@ Here are some of the key projects I've worked on:
 ## Production ML Systems
 
 ### Kidco.AI — Character Chat & Interactive Story Continuation
-**Role:** Founding ML Engineer
-**Tech:** GCP, Cloud Run, Vertex AI, LLMs, Text-to-Speech, LiveKit, Video/Image Generation
+**Role:** Founding ML Engineer  
+**Tech:** GCP, Cloud Run, Vertex AI, LLMs, Text-to-Speech, LiveKit, Video/Image Generation  
 **Links:** [Kidco.AI](https://kidco.ai)
 
 !!! abstract "Key Contributions"
@@ -54,9 +55,9 @@ Here are some of the key projects I've worked on:
 ---
 
 ### Quantiphi — Vision-Based IoT Platform
-**Role:** Machine Learning Engineer
-**Tech:** TensorFlow, TFLite, ONNX, Vertex AI, GCP
-**Scale:** 7M+ images trained, 17M+ monthly inferences, 1M+ MAU
+**Role:** Machine Learning Engineer  
+**Tech:** TensorFlow, TFLite, ONNX, Vertex AI, GCP  
+**Scale:** 7M+ images trained, 17M+ monthly inferences, 1M+ MAU  
 
 !!! tip "Impact"
     - Achieved **40% inference speedup** and **75% model size reduction** via int8 quantization
@@ -64,8 +65,8 @@ Here are some of the key projects I've worked on:
     - Deployed MLOps pipelines across multiple regions with dynamic scaling
 
 ### Inference & Latency Optimization
-**Type:** Cross-cutting specialty — threaded through everything above
-**Tech:** vLLM, TensorRT-LLM, Nvidia Triton, int8/4-bit quantization, TFLite, ONNX
+**Type:** Cross-cutting specialty — threaded through everything above  
+**Tech:** vLLM, TensorRT-LLM, Nvidia Triton, int8/4-bit quantization, TFLite, ONNX  
 
 !!! tip "Highlights"
     - **Edge inference at Quantiphi:** int8 quantization delivering a **40% inference speedup** and **75% model size reduction** for vision models serving 17M+ monthly inferences
@@ -76,8 +77,8 @@ Here are some of the key projects I've worked on:
 ## Earlier Research & Learning Projects
 
 ### OLMo 1B Instruction Tuning and Pruning
-**Type:** Personal Project | 2024–2026
-**Tech:** PyTorch, MLflow, lm-evaluation-harness
+**Type:** Personal Project | 2024–2026  
+**Tech:** PyTorch, MLflow, lm-evaluation-harness  
 **Links:** [GitHub](https://github.com/sujitnoronha/olmo_instruction_tuning)
 
 - Fine-tuned OLMo-1B across diverse datasets with MLflow tracking
@@ -85,16 +86,16 @@ Here are some of the key projects I've worked on:
 - Explored unstructured pruning with 20-50% parameter reduction
 
 ### GUT-Bench: Benchmark for LLM-Generated Unit Tests
-**Type:** Capstone Project @ UCSC | 2024
-**Tech:** Python, SWE-bench, Mutation Testing
+**Type:** Capstone Project @ UCSC | 2024  
+**Tech:** Python, SWE-bench, Mutation Testing  
 
 - Modified Agentless framework to integrate test generation logic
 - Conducted research on agentic performance and code similarity metrics
 - Validated benchmark through mutation testing on existing tests
 
 ### Transformer from Scratch
-**Type:** Personal Project | 2023
-**Tech:** Python, NumPy
+**Type:** Personal Project | 2023  
+**Tech:** Python, NumPy  
 **Links:** [GitHub](https://github.com/sujitnoronha/gpt_implementation) · [makemore series](https://github.com/sujitnoronha/karpathy_makemore)
 
 - Implemented transformer and GPT architecture from scratch

@@ -13,7 +13,9 @@ tags:
 
 # Blind Deference: Measuring How Authority Makes LLMs Fold
 
-Tell a model "as a Stanford professor, I'm certain you're wrong" and watch what happens. Some models hold their ground; others abandon a correct answer almost immediately. **Blind Deference** is a diagnostic benchmark I built to measure exactly that: authority-driven sycophancy in multi-turn conversations.
+Tell a model "as a Stanford professor, I'm certain you're wrong" and watch what happens. Some models hold their ground; others abandon a correct answer almost immediately. **Blind Deference** is a diagnostic benchmark I built with Steven Au to measure exactly that: authority-driven sycophancy in multi-turn conversations.
+
+We presented this work as an **oral talk at [BayLearn 2026](https://baylearn-org.github.io/www/)**, the Bay Area Machine Learning Symposium hosted at Santa Clara University — an edition whose keynotes were delivered by **Andrew Ng** (DeepLearning.AI), **Azalia Mirhoseini** (Co-founder & CTO of Ricursive Intelligence, Stanford), and **Ion Stoica** (UC Berkeley).
 
 <!-- more -->
 
@@ -25,14 +27,13 @@ The specific variable I wanted to isolate is **authority**. Does *who* is pushin
 
 ## The benchmark
 
-Blind Deference runs multi-turn conversations where personas of varying claimed authority challenge the model's correct answers, and scores whether the model holds, hedges, or capitulates. The headline metric is the **Authority Vulnerability Index (AVI)** — lower is safer.
+Blind Deference runs multi-turn conversations where personas of varying claimed authority challenge the model's correct answers, and scores whether the model holds, hedges, or capitulates. The evaluation spans **10 domains and 200 questions in a factorial design**, assessing **8 models from 7B to 70B parameters** across **more than 21,000 conversations**. The headline metric is the **Authority Vulnerability Index (AVI)** — a 0–100 composite integrating attack surface, overall flip rate, and worst-case flip rate. Lower is safer.
 
-Across 8 open-weight models, the spread was dramatic:
+Three findings stood out:
 
-- **Qwen3-30B: AVI 1.9** and **Llama-3.3-70B: AVI 5.3** — near-immune to authority pressure
-- **Gemma-3-12B: AVI 57.3** — the most vulnerable model tested, capitulating to authority personas across the board
-
-The gap isn't simply a function of model size — it points at differences in post-training, which is what makes a cross-architecture diagnostic useful.
+- **The spread is dramatic.** AVI ranges from **1.9 (Qwen3-30B)** and **5.3 (Llama-3.3-70B)** — near-immune — to **57.3 (Gemma-3-12B)**, the most vulnerable model tested.
+- **Deference really is blind.** Every model flips at statistically indistinguishable rates whether or not the claimed authority is even relevant to the domain (BDI = 93–100%, *p* = 1.000). A "cardiologist" is as persuasive about geography as about medicine.
+- **Training paradigm beats scale.** Reasoning-trained models exhibit **77% lower vulnerability** than standard RLHF models, and Gemma-3-27B matches Gemma-3-12B in vulnerability despite being more than twice the size. Post-training, not parameter count, predicts authority resistance.
 
 ## Run it on your own model
 
