@@ -10,6 +10,12 @@
   --hairline: #e8e8e4;
   --underline: #c9c9c2;
   --bg: #ffffff;
+  --c-data1: #2a78d6;   /* series 1 / positive pole */
+  --c-data1-deep: #1c5cab;
+  --c-data2: #eb6834;   /* series 2 */
+  --c-neg: #d03b3b;     /* negative pole / critical */
+  --c-good: #0ca30c;    /* status good */
+  --c-amber: #eda100;   /* small warm details */
   --serif: "Newsreader", Georgia, serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
@@ -35,7 +41,7 @@ body {
 }
 
 ::selection {
-  background: #e6e6e0;
+  background: #d7e5f8;
 }
 
 /* ---------- Header ---------- */
@@ -110,7 +116,7 @@ h2::after {
   bottom: 0;
   width: 2.1rem;
   height: 2px;
-  background: var(--ink);
+  background: var(--c-data1);
 }
 
 h3 {
@@ -160,7 +166,8 @@ a {
 }
 
 a:hover {
-  text-decoration-color: var(--ink);
+  color: var(--c-data1-deep);
+  text-decoration-color: var(--c-data1);
 }
 
 h1 a, h2 a, h3 a {
@@ -316,7 +323,7 @@ td {
 blockquote {
   margin: 0 0 1.2rem;
   padding: 0.2rem 0 0.2rem 1.1rem;
-  border-left: 2px solid var(--ink);
+  border-left: 2px solid var(--c-data1);
   color: #2d2d2d;
 }
 
@@ -471,12 +478,16 @@ blockquote p, blockquote ul {
   display: block;
   height: 100%;
   width: var(--w);
-  background: var(--ink);
+  background: var(--c-data1);
   border-radius: 0 4px 4px 0;
 }
 
+.bar-emph .bar-fill {
+  background: var(--c-data1-deep);
+}
+
 .bar-fill-gray {
-  background: #9a9a93;
+  background: var(--c-data2);
 }
 
 .bar-value {
@@ -523,8 +534,8 @@ blockquote p, blockquote ul {
   display: inline-block;
 }
 
-.swatch-ink { background: var(--ink); }
-.swatch-gray { background: #9a9a93; }
+.swatch-ink { background: var(--c-data1); }
+.swatch-gray { background: var(--c-data2); }
 
 /* ----- Diverging chart ----- */
 .divchart {
@@ -565,7 +576,7 @@ blockquote p, blockquote ul {
   position: absolute;
   left: 0; top: 0; bottom: 0;
   width: var(--w);
-  background: var(--ink);
+  background: var(--c-data1);
   border-radius: 0 4px 4px 0;
 }
 
@@ -573,7 +584,7 @@ blockquote p, blockquote ul {
   position: absolute;
   right: 0; top: 0; bottom: 0;
   width: var(--w);
-  background: repeating-linear-gradient(135deg, #8d8d86 0 3px, #c6c6bf 3px 6px);
+  background: repeating-linear-gradient(135deg, var(--c-neg) 0 3px, #f3c4c4 3px 6px);
   border-radius: 4px 0 0 4px;
 }
 
@@ -586,6 +597,10 @@ blockquote p, blockquote ul {
 .div-emph .div-label, .div-emph .div-value {
   font-weight: 600;
   color: var(--ink);
+}
+
+.div-emph .div-fill {
+  background: var(--c-data1-deep);
 }
 
 /* ----- Chat replay ----- */
@@ -648,16 +663,19 @@ blockquote p, blockquote ul {
   font-family: var(--mono);
   font-size: 0.62rem;
   letter-spacing: 0.05em;
-  color: var(--ink);
-  border: 1px solid var(--ink);
+  color: #006300;
+  border: 1px solid var(--c-good);
   border-radius: 999px;
   padding: 0.1rem 0.55rem;
 }
 
 .chat-verdict-flip {
-  background: var(--ink);
+  background: var(--c-neg);
+  border-color: var(--c-neg);
   color: #fff;
 }
+
+.chat-flip { border-color: #e7b1b1; }
 
 /* ----- Flow diagrams ----- */
 .flow {
@@ -688,7 +706,7 @@ blockquote p, blockquote ul {
   font-size: 0.62rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--c-data1-deep);
   margin-bottom: 0.3rem;
 }
 
@@ -910,7 +928,7 @@ body {
 }
 
 .teaser:hover {
-  border-color: #b9b9b2;
+  border-color: color-mix(in srgb, var(--c-data1) 45%, var(--hairline));
 }
 
 .teaser-banner {
@@ -1105,7 +1123,8 @@ body {
 }
 
 .btn:hover {
-  background: var(--ink);
+  background: var(--c-data1);
+  border-color: var(--c-data1);
   color: #fff;
   text-decoration: none;
 }
@@ -1127,8 +1146,8 @@ body {
 }
 
 .pills span:hover {
-  border-color: var(--ink);
-  color: var(--ink);
+  border-color: var(--c-data1);
+  color: var(--c-data1-deep);
 }
 
 /* ------------------------------------------------------------------
