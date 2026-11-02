@@ -1,0 +1,420 @@
+/* ------------------------------------------------------------------
+   Sujit Noronha — hand-written minimalist theme
+   White. Serif display (Newsreader), sans body (Inter), mono details.
+   One flourish: the short black rule under section headings.
+   ------------------------------------------------------------------ */
+
+:root {
+  --ink: #1a1a1a;
+  --muted: #6b7280;
+  --hairline: #e8e8e4;
+  --underline: #c9c9c2;
+  --bg: #ffffff;
+  --serif: "Newsreader", Georgia, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 44rem;
+  padding: 0 1.4rem 3rem;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #e6e6e0;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  padding: 1.6rem 0 1.1rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 2.4rem;
+}
+
+.site-name {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.1rem;
+  font-size: 0.82rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 0.18s ease;
+}
+
+.site-nav a:hover {
+  color: var(--ink);
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 2.2rem 0 0.8rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-size: 1.45rem;
+  padding-bottom: 0.4rem;
+  position: relative;
+  margin-top: 2.6rem;
+}
+
+/* The one flourish: a short rule under section headings */
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.1rem;
+  height: 2px;
+  background: var(--ink);
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+p, ul, ol {
+  margin: 0 0 1.1rem;
+  font-size: 0.92rem;
+}
+
+ul, ol {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.45rem;
+}
+
+li::marker {
+  color: var(--muted);
+}
+
+strong {
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--hairline);
+  margin: 2.4rem 0;
+}
+
+em {
+  font-family: var(--serif);
+  font-size: 1.04em;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--underline);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.18s ease;
+}
+
+a:hover {
+  text-decoration-color: var(--ink);
+}
+
+h1 a, h2 a, h3 a {
+  text-decoration: none;
+}
+
+/* ---------- Homepage hero ---------- */
+.hero {
+  padding-bottom: 0.4rem;
+}
+
+.hero .avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 1.3rem;
+  border: 1px solid var(--hairline);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 0.95rem;
+  color: #2d2d2d;
+  max-width: 40rem;
+}
+
+/* ---------- Blog list ---------- */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.6rem 0;
+}
+
+.post-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1.1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--hairline);
+  margin: 0;
+}
+
+.post-list time {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+  white-space: nowrap;
+  min-width: 7.2rem;
+}
+
+.post-list a {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  text-decoration: none;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--ink);
+  text-underline-offset: 3px;
+}
+
+/* ---------- Posts ---------- */
+.post-header {
+  margin-bottom: 1.8rem;
+}
+
+.post-header h1 {
+  margin-bottom: 0.4rem;
+}
+
+.post-meta {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.post-back {
+  margin-top: 2.6rem;
+  font-size: 0.85rem;
+}
+
+.post-back a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.post-back a:hover {
+  color: var(--ink);
+}
+
+/* ---------- Code ---------- */
+code {
+  font-family: var(--mono);
+  font-size: 0.8em;
+  background: #f5f5f2;
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+
+pre {
+  background: #f8f8f5;
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+  padding: 0.95rem 1.1rem;
+  overflow-x: auto;
+  margin: 0 0 1.2rem;
+  line-height: 1.55;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.74rem;
+}
+
+/* ---------- Tables ---------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 0 1.3rem;
+  font-size: 0.84rem;
+  display: block;
+  overflow-x: auto;
+}
+
+th {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-align: left;
+  padding: 0.5rem 0.9rem 0.5rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+td {
+  padding: 0.5rem 0.9rem 0.5rem 0;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+
+/* ---------- Blockquote (used for project callouts) ---------- */
+blockquote {
+  margin: 0 0 1.2rem;
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  border-left: 2px solid var(--ink);
+  color: #2d2d2d;
+}
+
+blockquote p, blockquote ul {
+  font-size: 0.88rem;
+}
+
+/* ---------- Project metadata lines ---------- */
+.proj-meta {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 0.9rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--hairline);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: var(--muted);
+}
+
+.site-footer a:hover {
+  color: var(--ink);
+}
+
+/* ---------- Animations: quiet motion ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Hero children stagger in on load — pure CSS */
+  .hero > * {
+    animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .hero > *:nth-child(1) { animation-delay: 0.05s; }
+  .hero > *:nth-child(2) { animation-delay: 0.14s; }
+  .hero > *:nth-child(3) { animation-delay: 0.23s; }
+  .hero > *:nth-child(4) { animation-delay: 0.32s; }
+  .hero > *:nth-child(5) { animation-delay: 0.41s; }
+
+  /* Scroll reveal: .reveal is added by JS, so no-JS keeps all content visible */
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Heading rule draws in */
+  h2::after {
+    transform-origin: left center;
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+  }
+
+  h2.reveal:not(.visible)::after {
+    transform: scaleX(0);
+  }
+
+  /* Blog rows nudge right on hover */
+  .post-list li {
+    transition: padding-left 0.2s ease;
+  }
+
+  .post-list li:hover {
+    padding-left: 0.3rem;
+  }
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 560px) {
+  html { font-size: 16px; }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-list li {
+    flex-direction: column;
+    gap: 0.05rem;
+  }
+
+  .post-list time {
+    min-width: 0;
+  }
+}

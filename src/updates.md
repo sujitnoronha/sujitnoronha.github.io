@@ -1,13 +1,18 @@
+---
+layout: base.njk
+title: Updates
+---
+
 # Updates
 
-A running log of what I've been up to. Longer write-ups live on the [Blog](blog/index.md).
+A running log of what I've been up to. Longer write-ups live on the [Blog](/blog/).
 
 ## 2026
 
-- **November** — Relaunched this portfolio on GitHub Pages with a full content refresh.
+- **November** — Relaunched this portfolio as a hand-built static site on GitHub Pages.
 - **October** — Presented **Blind Deference** as an **oral talk at [BayLearn 2026](https://baylearn-org.github.io/www/)**, the Bay Area ML Symposium at Santa Clara University. This year's keynotes were delivered by Andrew Ng (DeepLearning.AI), Azalia Mirhoseini (Ricursive Intelligence), and Ion Stoica (UC Berkeley).
-- **September** — Submitted our audio reasoning work to **Interspeech 2026**: structured prompting beat automated prompt optimization and self-training on the MMAR benchmark, **+4.9 points** over the Qwen3-Omni-30B baseline at zero training cost. [Read the write-up](blog/posts/interspeech-2026-audio-reasoning.md)
-- **August** — Released **Blind Deference** (with Steven Au), a diagnostic benchmark for authority-driven sycophancy in multi-turn conversations, with the Authority Vulnerability Index measured across 8 open-weight models. [Read the write-up](blog/posts/blind-deference-sycophancy.md)
+- **September** — Submitted our audio reasoning work to **Interspeech 2026**: structured prompting beat automated prompt optimization and self-training on the MMAR benchmark, **+4.9 points** over the Qwen3-Omni-30B baseline at zero training cost. [Read the write-up](/blog/interspeech-2026-audio-reasoning/)
+- **August** — Released **Blind Deference** (with Steven Au), a diagnostic benchmark for authority-driven sycophancy in multi-turn conversations, with the Authority Vulnerability Index measured across 8 open-weight models. [Read the write-up](/blog/blind-deference-sycophancy/)
 - **June** — Open-sourced **[VoiceCheck](https://github.com/sujitnoronha/voicecheck)**: end-to-end testing for voice agents — YAML scenarios, real audio through LiveKit/Daily/VAPI/Retell, 13 evaluators, and a self-hosted dashboard.
 - **Ongoing** — Driving end-to-end latency optimization for real-time voice conversations at Kidco.AI, and exploring mechanistic interpretability of tool-calling behavior in LLMs.
 
@@ -18,5 +23,5 @@ A running log of what I've been up to. Longer write-ups live on the [Blog](blog/
 
 ## 2024
 
-- **December** — Completed my **MS in Artificial Intelligence at UC Santa Cruz** (GPA 4.0). Capstone: **GUT-Bench**, a benchmark for LLM-generated unit tests validated with mutation testing. [Read the write-up](blog/posts/gut-bench-capstone.md)
+- **December** — Completed my **MS in Artificial Intelligence at UC Santa Cruz** (GPA 4.0). Capstone: **GUT-Bench**, a benchmark for LLM-generated unit tests validated with mutation testing. [Read the write-up](/blog/gut-bench-capstone/)
 - **July** — Joined Kidco.AI as an ML Engineer Intern.

@@ -1,21 +1,9 @@
 ---
+title: "GUT-Bench: Can LLMs Write Unit Tests That Actually Catch Bugs?"
 date: 2024-12-10
-authors: [sujit]
-categories:
-  - AI Research
-  - Projects
-tags:
-  - llm-evaluation
-  - unit-tests
-  - swe-bench
-  - capstone
 ---
 
-# GUT-Bench: Can LLMs Write Unit Tests That Actually Catch Bugs?
-
 For my MS capstone at UC Santa Cruz, I worked on a question that most code-generation benchmarks skip: when an LLM writes a unit test, is it actually a *good* test? **GUT-Bench** (Generated Unit Tests Benchmark) is our attempt to measure that rigorously.
-
-<!-- more -->
 
 ## Why test generation needs its own benchmark
 

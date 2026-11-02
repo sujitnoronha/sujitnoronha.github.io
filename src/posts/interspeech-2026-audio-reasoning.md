@@ -1,22 +1,9 @@
 ---
+title: "Structured Prompting vs. Self-Training: What Actually Helps Audio Reasoning on a Budget?"
 date: 2026-09-27
-authors: [sujit]
-categories:
-  - AI Research
-  - Audio
-tags:
-  - interspeech
-  - audio-reasoning
-  - prompt-engineering
-  - self-training
-  - qwen-omni
 ---
 
-# Structured Prompting vs. Self-Training: What Actually Helps Audio Reasoning on a Budget?
-
 When labeled data is scarce and compute is tight, how should you improve a multimodal LLM on audio reasoning? For our Interspeech 2026 work, we systematically compared three strategies on the [MMAR benchmark](https://mmar-benchmark.github.io/) — and the cheapest one won.
-
-<!-- more -->
 
 ## The setup
 

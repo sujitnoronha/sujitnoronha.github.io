@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title and title != "Sujit Noronha" %}{{ title }} · Sujit Noronha{% else %}Sujit Noronha{% endif %}</title>
+  <meta name="description" content="{{ description or "Sujit Noronha — machine learning engineer. Voice AI, LLM post-training, inference optimization, and evaluation." }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22Georgia%22>S</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="/">Sujit Noronha</a>
+    <nav class="site-nav">
+      <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
+      <a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a>
+      <a href="/projects/" {% if page.url == "/projects/" %}aria-current="page"{% endif %}>Projects</a>
+      <a href="/blog/" {% if "/blog/" in page.url %}aria-current="page"{% endif %}>Blog</a>
+      <a href="/updates/" {% if page.url == "/updates/" %}aria-current="page"{% endif %}>Updates</a>
+      <a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Sujit Noronha · <a href="https://github.com/sujitnoronha">GitHub</a> · <a href="https://linkedin.com/in/sujitnoronha">LinkedIn</a> · <a href="mailto:snoronha@ucsc.edu">Email</a></p>
+  </footer>
+
+  <script src="/js/animate.js"></script>
+</body>
+</html>

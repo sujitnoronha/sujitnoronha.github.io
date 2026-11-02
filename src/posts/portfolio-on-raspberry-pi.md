@@ -1,27 +1,20 @@
 ---
+title: "Building My Portfolio Site on a Raspberry Pi"
 date: 2025-01-10
-authors: [sujit]
-categories:
-  - Projects
-  - Raspberry Pi
-tags:
-  - self-hosting
-  - mkdocs
-  - portfolio
 ---
-
-# Building My Portfolio Site on a Raspberry Pi
 
 I decided to host my personal portfolio on my Raspberry Pi instead of using a generic platform. Here's how I set it up...
 
-## Why Self-Host?
+*(2026 update: this site now lives on GitHub Pages as a hand-built static site — but the Pi era was a great learning experience.)*
+
+## Why self-host?
 
 - **Full control** over the stack and design
 - **No platform lock-in** — I own my content
 - **Learning opportunity** — sysadmin, networking, deployment
 - **Cost** — basically free after hardware
 
-## The Stack
+## The stack
 
 | Component | Choice |
 |-----------|--------|
@@ -31,7 +24,7 @@ I decided to host my personal portfolio on my Raspberry Pi instead of using a ge
 | SSL | Let's Encrypt |
 | CI/CD | GitHub Actions |
 
-## Setup Process
+## Setup process
 
 ### 1. Environment
 
@@ -41,7 +34,7 @@ source ~/blog-venv/bin/activate
 pip install mkdocs-material
 ```
 
-### 2. Project Structure
+### 2. Project structure
 
 ```
 portfolio/
@@ -55,21 +48,11 @@ portfolio/
 └── mkdocs.yml
 ```
 
-### 3. Deployment
-
-[Details on nginx config, SSL, etc.]
-
-## Lessons Learned
+## Lessons learned
 
 1. **MkDocs Material is incredible** — the blog plugin, search, and theming are top-notch
 2. **Virtual environments are your friend** — keeps the Pi's system Python clean
 3. **Start simple, iterate** — don't over-engineer v1
-
-## Next Steps
-
-- [ ] Set up automatic deployment via GitHub Actions
-- [ ] Add analytics (privacy-friendly)
-- [ ] Experiment with custom plugins
 
 ---
 

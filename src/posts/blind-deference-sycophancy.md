@@ -1,23 +1,11 @@
 ---
+title: "Blind Deference: Measuring How Authority Makes LLMs Fold"
 date: 2026-08-06
-authors: [sujit]
-categories:
-  - AI Research
-  - Safety
-tags:
-  - sycophancy
-  - benchmarks
-  - llm-evaluation
-  - safety
 ---
-
-# Blind Deference: Measuring How Authority Makes LLMs Fold
 
 Tell a model "as a Stanford professor, I'm certain you're wrong" and watch what happens. Some models hold their ground; others abandon a correct answer almost immediately. **Blind Deference** is a diagnostic benchmark I built with Steven Au to measure exactly that: authority-driven sycophancy in multi-turn conversations.
 
 We presented this work as an **oral talk at [BayLearn 2026](https://baylearn-org.github.io/www/)**, the Bay Area Machine Learning Symposium hosted at Santa Clara University — an edition whose keynotes were delivered by **Andrew Ng** (DeepLearning.AI), **Azalia Mirhoseini** (Co-founder & CTO of Ricursive Intelligence, Stanford), and **Ion Stoica** (UC Berkeley).
-
-<!-- more -->
 
 ## The problem
 
