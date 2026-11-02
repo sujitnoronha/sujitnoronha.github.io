@@ -2,13 +2,13 @@
 
 ## Sujit Noronha
 
-I'm a Machine Learning Engineer with an MS in Artificial Intelligence from UC Santa Cruz (GPA: 4.0). I specialize in building production ML systems, optimizing LLMs, and deploying AI at scale.
+I'm a Machine Learning Engineer with an MS in Artificial Intelligence from UC Santa Cruz (GPA: 4.0). I build production voice AI systems, fine-tune and evaluate multimodal LLMs, and deploy AI at scale.
 
 ## What I Do
 
-- 🚀 **Production ML Systems** — Architecting and deploying ML pipelines that scale from zero to millions of users
-- 🧠 **LLM Engineering** — Fine-tuning, optimizing, and building guardrails for large language models
-- ⚡ **Edge AI** — Quantizing and optimizing models for resource-constrained devices
+- 🎙️ **Voice AI** — Real-time LLM-powered conversation systems: speech pipelines, transports (LiveKit), guardrails, and latency optimization
+- 🧠 **Multimodal LLM Engineering** — Fine-tuning (LoRA, ReST), prompt optimization (DSPy), and quantization for audio reasoning models
+- 📏 **Evaluation & Safety** — Designing benchmarks (sycophancy probing, audio reasoning) and test harnesses for LLMs and voice agents
 - 🔧 **MLOps** — Building robust CI/CD pipelines for model deployment on GCP, AWS, and Kubernetes
 
 ## Background
@@ -30,19 +30,14 @@ I'm a Machine Learning Engineer with an MS in Artificial Intelligence from UC Sa
 |----------|-------------|
 | Languages | Python, C++, C, SQL |
 | Frameworks | PyTorch, TensorFlow, OpenCV, NLTK, spaCy, Scikit-learn, NumPy, Pandas |
-| LLM/GenAI | Transformers, LLMs, TensorRT LLM, vLLM, LangChain, MLflow |
+| LLM/GenAI | Transformers, vLLM, TensorRT LLM, DSPy, LoRA/PEFT, LangChain, MLflow |
+| Voice/Audio | LiveKit, Daily, VAPI, Retell, TTS/STT pipelines, Qwen-Omni models |
 | MLOps | Kubernetes, Docker, CI/CD, Vertex AI, GCP, AWS, Nvidia Triton |
 | Edge | TFLite, ONNX, int8 Quantization, Edge AI |
 
-## Featured Projects
+## Current Focus
 
-- **OLMO 1B Instruction Tuning & Pruning** — Fine-tuned and evaluated open-source LLMs with structured pruning experiments
-- **GUT-Bench** — Benchmark for evaluating LLM-generated unit tests using SWE-bench and mutation testing
-- **Transformer from Scratch** — Built GPT/BERT architectures from scratch to deeply understand self-attention
-
-## Get in Touch
-
-- 📧 Email: [snoronha@ucsc.edu](mailto:snoronha@ucsc.edu)
-- 💼 LinkedIn: [linkedin.com/in/sujitnoronha](https://linkedin.com/in/sujitnoronha)
-- 🐙 GitHub: [github.com/sujitnoronha](https://github.com/sujitnoronha)
-- 📱 Phone: (408) 210-2037
+- **Audio-native reasoning** — published at Interspeech 2026 on improving audio reasoning under limited data and compute
+- **LLM evaluation & safety** — benchmarks for sycophancy and authority-driven capitulation in multi-turn conversations
+- **Voice agent reliability** — building [VoiceCheck](https://github.com/sujitnoronha/voicecheck), an end-to-end testing framework for voice agents
+- **Mechanistic interpretability** — probing the cognition-execution gap in tool-calling models

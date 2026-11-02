@@ -1,7 +1,7 @@
 site_name: Sujit Noronha
-site_description: ML Engineer | LLM Optimization | Edge AI | MLOps
+site_description: ML Engineer | Voice AI | Multimodal LLMs | Evals | MLOps
 site_author: Sujit Noronha
-site_url: https://sujitnoronha.com
+site_url: https://sujitnoronha.github.io
 
 theme:
   name: material
@@ -33,6 +33,7 @@ theme:
 
 plugins:
   - search
+  - blog
 
 extra:
   social:
@@ -59,5 +60,6 @@ nav:
   - Home: index.md
   - About: about.md
   - Projects: projects.md
-  - Blog: blog/
+  - Blog: blog/index.md
+  - Updates: updates.md
   - Contact: contact.md

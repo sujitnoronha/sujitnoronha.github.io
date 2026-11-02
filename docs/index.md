@@ -1,13 +1,13 @@
-# Welcome to My Portfolio
+# Welcome
 
-Hi, I'm **Sujit Noronha** — a Machine Learning Engineer passionate about building production AI systems, optimizing LLMs, and deploying intelligence at scale.
+Hi, I'm **Sujit Noronha** — a Machine Learning Engineer building production voice AI, fine-tuning and evaluating multimodal LLMs, and shipping the low-latency systems they run on.
 
 ## What I Do
 
-- 🚀 **Production ML Systems** — Architecting pipelines that serve millions of users
-- 🧠 **LLM Engineering** — Fine-tuning, optimizing, and building guardrails for large language models  
-- ⚡ **Edge AI** — Quantizing and optimizing models for resource-constrained devices
-- 🔧 **MLOps** — Building robust CI/CD pipelines for model deployment
+- 🎙️ **Voice AI** — Real-time LLM-powered conversations: speech pipelines, transports, latency optimization
+- 🧠 **Multimodal LLMs** — Fine-tuning, prompt optimization, and self-training for audio reasoning models
+- 📏 **Evaluation & Safety** — Building benchmarks and test harnesses for LLMs and voice agents
+- 🔧 **MLOps** — Robust CI/CD and serving infrastructure on GCP, from zero to production scale
 
 ## Quick Facts
 
@@ -18,18 +18,14 @@ Hi, I'm **Sujit Noronha** — a Machine Learning Engineer passionate about build
 | 🌎 **Location** | Los Altos, CA |
 | 📧 **Contact** | [snoronha@ucsc.edu](mailto:snoronha@ucsc.edu) |
 
-## Latest from the Blog
+## Recent Highlights
 
-{{ blog_content }}
+- 📄 **Interspeech 2026** — [Structured Prompting vs. Self-Training for Audio Reasoning](projects.md#structured-prompting-vs-self-training-for-audio-reasoning): +4.9 points on the MMAR benchmark with Qwen3-Omni-30B, at zero training cost
+- 🧪 **Blind Deference** — [a diagnostic benchmark](projects.md#blind-deference-authority-driven-sycophancy-in-llms) for authority-driven sycophancy, measured across 8 open-weight models
+- 🎧 **VoiceCheck** — [end-to-end testing for voice agents](projects.md#voicecheck-end-to-end-testing-for-voice-agents): real audio through real transports, graded by 13 evaluators
 
-## Featured Projects
-
-Check out my [Projects](projects.md) page to see what I've been working on, including:
-
-- **Kidco.AI** — Interactive 3D characters with LLM-powered conversations
-- **Quantiphi IoT Platform** — Computer vision at scale (17M+ monthly inferences)
-- **OLMO 1B Tuning** — Open-source LLM fine-tuning and pruning research
+Head to [Projects](projects.md) for the full list, the [Blog](blog/index.md) for write-ups, or [Updates](updates.md) for a running timeline.
 
 ---
 
-*This site is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and hosted on my Raspberry Pi.*
+*This site is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and deployed on GitHub Pages.*
