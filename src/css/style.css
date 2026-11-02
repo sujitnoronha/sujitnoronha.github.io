@@ -1042,3 +1042,77 @@ body {
     gap: 0.6rem;
   }
 }
+
+/* ------------------------------------------------------------------
+   Homepage showcase: project entries, badge buttons, skill pills
+   ------------------------------------------------------------------ */
+.proj {
+  padding-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.proj:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0.4rem;
+}
+
+.proj h3 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.proj p {
+  font-size: 0.86rem;
+}
+
+.proj .banner-art {
+  margin: 0.9rem 0 0;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+  padding: 0.28rem 0.7rem;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--ink);
+  color: #fff;
+  text-decoration: none;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pills span {
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  color: var(--muted);
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 0.26rem 0.7rem;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.pills span:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
