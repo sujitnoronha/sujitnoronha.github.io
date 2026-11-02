@@ -1,6 +1,8 @@
 ---
 title: "GUT-Bench: Can LLMs Write Unit Tests That Actually Catch Bugs?"
 date: 2024-12-10
+banner: mutants
+description: "My UCSC capstone: grading LLM-generated unit tests by the bugs they catch, not whether they run — using mutation testing as ground truth."
 ---
 
 For my MS capstone at UC Santa Cruz, I worked on a question that most code-generation benchmarks skip: when an LLM writes a unit test, is it actually a *good* test? **GUT-Bench** (Generated Unit Tests Benchmark) is our attempt to measure that rigorously.

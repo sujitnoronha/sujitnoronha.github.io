@@ -4,10 +4,9 @@ title: Sujit Noronha
 ---
 
 <div class="hero">
-  <img class="avatar" src="https://github.com/sujitnoronha.png" alt="Sujit Noronha">
-  <h1>Sujit Noronha</h1>
-  <p>I'm a machine learning engineer. I'm currently the Founding ML Engineer at <a href="https://kidco.ai">Kidco.AI</a>, where I build real-time, LLM-powered voice conversations for kids — speech pipelines, guardrails, and the latency work that makes them feel alive.</p>
-  <p>I work across the full model lifecycle: <strong>LLM post-training</strong>, <strong>inference optimization</strong>, <strong>evaluation &amp; safety</strong>, and <strong>voice AI systems</strong>. Before this I was a machine learning engineer at Quantiphi, and I have an MS in Artificial Intelligence from UC Santa Cruz.</p>
+  <h1>Hi, I'm Sujit.</h1>
+  <p>I build production AI systems end to end. At <a href="https://kidco.ai">Kidco.AI</a> I ship real-time, LLM-powered voice conversations for kids — speech pipelines, guardrails, and the latency work that makes them feel alive.</p>
+  <p>I work across the full model lifecycle: <strong>LLM post-training</strong>, <strong>inference optimization</strong>, <strong>evaluation &amp; safety</strong>, and <strong>voice AI systems</strong>.</p>
 </div>
 
 ## Currently
@@ -26,8 +25,20 @@ title: Sujit Noronha
 
 More on the [Projects](/projects/) page, and a running timeline in [Updates](/updates/).
 
-## Elsewhere
+## From the blog
 
-- [GitHub](https://github.com/sujitnoronha)
-- [LinkedIn](https://linkedin.com/in/sujitnoronha)
-- [Email](mailto:snoronha@ucsc.edu)
+<div class="teasers">
+{%- for post in collections.posts | reverse %}{% if loop.index <= 2 %}
+<a class="teaser" href="{{ post.url }}">
+<span class="teaser-banner">{% include "banners/" + post.data.banner + ".njk" %}</span>
+<span class="teaser-body">
+<span class="teaser-date">{{ post.date | postDate }}</span>
+<span class="teaser-title">{{ post.data.title }}</span>
+<span class="teaser-desc">{{ post.data.description }}</span>
+<span class="teaser-more">Read the write-up →</span>
+</span>
+</a>
+{% endif %}{%- endfor %}
+</div>
+
+All posts live on the [Blog](/blog/).

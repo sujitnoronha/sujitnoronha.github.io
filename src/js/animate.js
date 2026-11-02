@@ -5,7 +5,7 @@
   if (!("IntersectionObserver" in window)) return;
 
   var targets = document.querySelectorAll(
-    "main h2, main table, main blockquote, main .post-list"
+    "main h2, main table, main blockquote, main .post-list, main .fig"
   );
 
   var observer = new IntersectionObserver(

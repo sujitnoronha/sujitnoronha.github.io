@@ -1,0 +1,15 @@
+<figure class="fig fig-flow">
+<figcaption>The ReST loop, and where the data ran out: only 21.4% of problems landed in the learning zone.</figcaption>
+<div class="flow">
+<div class="flow-step" style="--i:0"><span class="flow-kicker">Generate</span><p>16 reasoning traces per problem at temperature 0.9.</p></div>
+<div class="flow-arrow" style="--i:1">→</div>
+<div class="flow-step" style="--i:2"><span class="flow-kicker">Filter</span><p>Keep only "learning zone" problems: 26–75% success rate across the 16 samples.</p></div>
+<div class="flow-arrow" style="--i:3">→</div>
+<div class="flow-step" style="--i:4"><span class="flow-kicker">Train</span><p>LoRA (r=64, α=128) on 4-bit NF4, targeting attention + MoE expert layers.</p></div>
+</div>
+<div class="funnel">
+<div class="funnel-row" style="--i:0"><span class="funnel-num">4,153</span><span class="funnel-desc">training problems</span></div>
+<div class="funnel-row" style="--i:1"><span class="funnel-num">889</span><span class="funnel-desc">in the learning zone (21.4%)</span></div>
+<div class="funnel-row" style="--i:2"><span class="funnel-num">4,361</span><span class="funnel-desc">usable training samples — not much for a 30B model</span></div>
+</div>
+</figure>
