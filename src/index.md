@@ -4,7 +4,7 @@ title: Sujit Noronha
 ---
 
 <div class="hero">
-  <h1>Hi, I'm Sujit.</h1>
+  <h1>Hi, I'm <span class="grad">Sujit</span>.</h1>
   <p>I build production AI systems end to end. At <a href="https://kidco.ai">Kidco.AI</a> I ship real-time, LLM-powered voice conversations for kids — speech pipelines, guardrails, and the latency work that makes them feel alive. I work across the full model lifecycle: <strong>LLM post-training</strong>, <strong>inference optimization</strong>, <strong>evaluation &amp; safety</strong>, and <strong>voice AI systems</strong>. Currently also exploring <strong>knowledge-graph-based long-term memory</strong> for LLM agents and mechanistic interpretability of tool-calling.</p>
 </div>
 
