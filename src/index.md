@@ -13,6 +13,7 @@ title: Sujit Noronha
 ## Currently
 
 - Building voice AI at [Kidco.AI](https://kidco.ai) — real-time LLM + TTS conversation pipelines and end-to-end latency optimization
+- Working on knowledge-graph-based long-term memory for LLM agents
 - Researching audio reasoning and LLM evaluation — recent work at Interspeech 2026 and BayLearn 2026
 - Exploring mechanistic interpretability of tool-calling behavior in LLMs
 

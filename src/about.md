@@ -41,6 +41,7 @@ I'm a Machine Learning Engineer with an MS in Artificial Intelligence from UC Sa
 
 ## Current focus
 
+- **Knowledge-graph-based long-term memory** — persistent, structured memory for LLM agents and conversational systems
 - **Audio-native reasoning** — work at Interspeech 2026 on improving audio reasoning under limited data and compute
 - **LLM evaluation & safety** — benchmarks for sycophancy and authority-driven capitulation in multi-turn conversations, presented as an oral talk at BayLearn 2026
 - **Voice agent reliability** — building [VoiceCheck](https://github.com/sujitnoronha/voicecheck), an end-to-end testing framework for voice agents
